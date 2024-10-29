@@ -19,13 +19,6 @@ body {
     height: fit-content;
 }
 
-.Secret {
-    z-index: 0;
-    position: absolute;
-    top: 500px;
-    left: 40%;
-}
-
 .heading {
     z-index: 2;
     color: white;
