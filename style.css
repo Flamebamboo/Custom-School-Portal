@@ -57,11 +57,13 @@ button {
 }
 
 .navbackground{
+    display: none;
     width: 100%;
     height: 105px;
     position: absolute;
     left: 0;
     filter: blur(5px);
+
     img{
         object-fit: cover;
         width: 100%;
