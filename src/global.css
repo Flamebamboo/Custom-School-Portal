@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
-@custom-variant blue (&:where([data-theme="blue"], [data-theme="blue"] *));
-
-@custom-variant green (&:where([data-theme="green"], [data-theme="green"] *));
-
-@theme blue {
-  --color-primary: rgba(0, 0, 255, 0.5);
+@font-face {
+  font-family: M5x7;
+  src: url("src/assets/fonts/M5x7.ttf");
 }
 
-@theme green {
-  --color-primary: rgba(0, 255, 0, 0.5);
+@theme {
+  --font-family: M5x7, "sans-serif";
+  --color-background: #ffffff;
+  --color-foreground: #1a1a1a;
+  --color-primary: #3f3cbb;
+  --color-secondary: #78dcca;
+  --color-accent: #3ab7bf;
 }

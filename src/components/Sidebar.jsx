@@ -22,13 +22,13 @@ const Sidebar = () => {
       <nav class="pt-16">
         <ul class="space-y-2 px-3">
           <li>
-            <ThemeSystem isCollapsed={isCollapsed} />
+            <ThemeSystem isCollapsed={isCollapsed} text={"Custom Theme"} />
           </li>
           {["quick1", "quick2", "quick3", "quick4", "quick5"].map((item) => (
             <li
               key={item}
               class={`p-3 rounded-lg flex items-center justify-start hover:bg-gray-700 cursor-pointer 
-                transition-colors duration-200 text-gray-100
+                transition-colors duration-200 text-gray-100 font-type
                 ${isCollapsed ? "text-center" : "px-4"}`}
             >
               {isCollapsed ? item[0] : item}

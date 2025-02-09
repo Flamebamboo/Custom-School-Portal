@@ -1,23 +1,29 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { getInitialTheme, applyTheme } from "../utils/theme";
+import { themePresets } from "../config/themes";
 
 const ThemeSystem = ({ isCollapsed }) => {
-  const [theme, setTheme] = useState("blue");
+  const [currentTheme, setCurrentTheme] = useState(getInitialTheme());
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-  }, [theme]);
+    applyTheme(currentTheme);
+  }, [currentTheme]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "blue" ? "green" : "blue"));
+  const cycleTheme = () => {
+    const presets = Object.keys(themePresets);
+    const currentIndex = presets.indexOf(currentTheme);
+    const nextTheme = presets[(currentIndex + 1) % presets.length];
+    setCurrentTheme(nextTheme);
   };
+
   return (
     <button
-      onClick={toggleTheme}
-      class={`w-full p-3 rounded-lg flex items-center justify-start hover:bg-gray-700 cursor-pointer 
-              transition-colors duration-200 text-gray-100
-              ${isCollapsed ? "text-center" : "px-4"}`}
+      onClick={cycleTheme}
+      className="w-full p-3 rounded-lg flex items-center justify-start 
+                bg-primary text-background hover:bg-accent cursor-pointer 
+                transition-colors duration-200"
     >
-      Custom Themes
+      {isCollapsed ? "T" : `Theme: ${themePresets[currentTheme].name}`}
     </button>
   );
 };
