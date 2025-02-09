@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-/* still learning how to use tailwind v4 theme variables  */
-@theme {
-  --color-primary: rgba(12, 100, 1, 0.5);
+@custom-variant blue (&:where([data-theme="blue"], [data-theme="blue"] *));
+
+@custom-variant green (&:where([data-theme="green"], [data-theme="green"] *));
+
+@theme blue {
+  --color-primary: rgba(0, 0, 255, 0.5);
+}
+
+@theme green {
+  --color-primary: rgba(0, 255, 0, 0.5);
 }
