@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* still learning how to use tailwind v4 theme variables  */
+@theme {
+  --color-primary: rgba(12, 100, 1, 0.5);
+}
