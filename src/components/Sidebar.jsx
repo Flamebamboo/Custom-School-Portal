@@ -3,14 +3,14 @@ import ThemeSystem from "/src/components/ThemeSystem.jsx";
 const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
   return (
     <div
-      class={`fixed top-0 left-0 h-full bg-gray-900 shadow-lg ${
+      class={`fixed top-0 left-0 h-full bg-foreground shadow-lg ${
         isCollapsed ? "w-16" : "w-64"
       } transition-all duration-300 ease-in-out`}
     >
       {/* toggle button open and close */}
       <button
-        class="absolute -right-10 top-5 bg-gray-800 p-3 rounded-r-lg shadow-md 
-        hover:bg-gray-700 focus:outline-none"
+        class="absolute -right-10 top-5 bg-foreground p-3 rounded-r-lg shadow-md 
+        hover:bg-accent focus:outline-none"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
         <span class="text-white text-xl">{"="}</span>
@@ -25,8 +25,8 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
           {["quick1", "quick2", "quick3", "quick4", "quick5"].map((item) => (
             <li
               key={item}
-              class={`p-3 rounded-lg flex items-center justify-start hover:bg-gray-700 cursor-pointer 
-                transition-colors duration-200 text-gray-100 font-type
+              class={`p-3 rounded-lg flex items-center justify-start hover:bg-accent cursor-pointer 
+                transition-colors duration-200 text-primary font-type
                 ${isCollapsed ? "text-center" : "px-4"}`}
             >
               {isCollapsed ? item[0] : item}

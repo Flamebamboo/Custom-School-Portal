@@ -4,11 +4,11 @@ export const themePresets = {
     name: "Light",
     variables: {
       "--font-display": "Inter, sans-serif",
-      "--color-background": "rgba(108, 117, 125, 1)",
-      "--color-foreground": "rgba(33, 37, 41, 1)",
-      "--color-primary": "rgba(255, 255, 255, 1)",
-      "--color-secondary": "rgba(108, 117, 125, 1)",
-      "--color-accent": "rgba(13, 110, 253, 1)",
+      "--color-background": "rgba(247, 252, 251)",
+      "--color-foreground": "#EFF3EA",
+      "--color-primary": "rgba(0,0,0)",
+      "--color-secondary": "#FFFDF0",
+      "--color-accent": "#D9EAFD",
     },
   },
   dark: {
