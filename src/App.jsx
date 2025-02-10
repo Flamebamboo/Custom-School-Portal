@@ -14,6 +14,7 @@ import {
   School,
   Users,
 } from "lucide-react";
+import FormButton from "./components/Forms";
 
 function App() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -54,6 +55,31 @@ function App() {
               />
               <QuickAccessCard title="Sports Draw" icon={Calendar} href="#" />
               <QuickAccessCard title="Google Drive" icon={Cloud} href="#" />
+            </div>
+          </section>
+          <section className="flex w-full items-start ml-28 justify-center flex-col py-16 bg-muted/30">
+            <h2 className="text-3xl text-center ml-6 mb-8 text-primary font-display font-bold">
+              Help & Support
+            </h2>
+            <div className="flex flex-col gap-4 w-full max-w-2xl px-4">
+              <FormButton
+                icon="MessageSquare"
+                link="https://docs.google.com/a/burnside.school.nz/forms/d/e/1FAIpQLSfAD0VPZiA55Weu-N9AzQlD2fYxMSx975cNVjDkokotlyZHvQ/viewform"
+              >
+                Counsellors Appointment Request
+              </FormButton>
+              <FormButton
+                icon="ShieldAlert"
+                link="https://docs.google.com/a/burnside.school.nz/forms/d/e/1FAIpQLSdcbaV69k85cOqW2vzDzPPKHRMziTa_eLwj4EkN4-4Zn8dhVQ/viewform"
+              >
+                Bullying Incident Report
+              </FormButton>
+              <FormButton
+                icon="HeartPulse"
+                link="https://docs.google.com/a/burnside.school.nz/forms/d/e/1FAIpQLSfWvNBM_Hg75wfttEQrMfU48nTKEcTT-q8THa56D4jZmgAJ7g/viewform"
+              >
+                Public Health Nurse Appointment
+              </FormButton>
             </div>
           </section>
         </main>
