@@ -11,10 +11,14 @@ This school portal built for BHS students to quickly navigate without bookmarkin
 React.JS + Tailwind (v4) 
 ## Features (Planned & Upcoming)
 - [x] Collapsible Sidebar
-- [ ] Theme toggle - Light Mode and Dark Mode
-- [ ] Multiple theme options and dropdown ~ achievable with new v4 tailwind @theme var system
+- [x] Theme toggle - Light Mode and Dark Mode
+- [x] Multiple theme options and dropdown ~ achievable with new v4 tailwind @theme var system
+- [x] Quick access layouts
+- [x] Most used sites layouts
+- [x] Support form component
 - [ ] Quick nav to most used sites and stuff
 - [ ] More to come? maybe scraping games? jk
+- [ ] more stuff later
 
 
 ## Contributing
