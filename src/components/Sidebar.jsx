@@ -1,8 +1,6 @@
-import { useState } from "react";
 import ThemeSystem from "/src/components/ThemeSystem.jsx";
 
-const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
   return (
     <div
       class={`fixed top-0 left-0 h-full bg-gray-900 shadow-lg ${

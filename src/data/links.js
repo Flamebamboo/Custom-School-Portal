@@ -4,22 +4,22 @@ export const portalLinks = {
     {
       name: "Google Calendar",
       url: "https://calendar.google.com/calendar/r?tab=mc",
-      icon: "img/Calendar.png",
+      icon: "/Calendar.png",
     },
     {
       name: "Gmail",
       url: "http://mail.burnside.school.nz/",
-      icon: "img/Gmail-logo.png",
+      icon: "/Gmail-logo.png",
     },
     {
       name: "School Kiwi",
       url: "https://burnside.school.kiwi/",
-      icon: "img/schoolkiwi.png",
+      icon: "/schoolkiwi.png",
     },
     {
       name: "Schoology",
       url: "https://schoology.burnside.school.nz/home",
-      icon: "img/Schoology-icon.png",
+      icon: "/Schoology-icon.png",
     },
   ],
   quickLinks: [

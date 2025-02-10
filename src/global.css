@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "tailwindcss";
 
-@font-face {
-  font-family: M5x7;
-  src: url("src/assets/fonts/M5x7.ttf");
-}
-
 @theme {
-  --font-family: M5x7, "sans-serif";
+  --font-display: "Darumadrop One", sans-serif;
   --color-background: #ffffff;
   --color-foreground: #1a1a1a;
   --color-primary: #3f3cbb;
