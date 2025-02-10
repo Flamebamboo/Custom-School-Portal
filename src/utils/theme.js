@@ -1,7 +1,8 @@
 import { themePresets } from "../config/themes";
 
 export const getInitialTheme = () => {
-  return localStorage.getItem("themePreset") || "light";
+  const savedTheme = localStorage.getItem("themePreset");
+  return savedTheme ? savedTheme : "BHSTheme";
 };
 
 export const applyTheme = (preset) => {
